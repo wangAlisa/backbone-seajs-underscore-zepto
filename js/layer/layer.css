@@ -1,0 +1,51 @@
+.layer .container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	text-align: center;
+}
+.layer .container img {
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+.layer .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	background: #000;
+	color: #fff;
+	padding: 0 10px 0 40px;
+}
+.layer .header h1 {
+	text-align: center;
+	font-size: 24px;
+	line-height: 60px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.layer .header .go-back {
+	position: relative;
+}
+.layer .header .go-back .arrow {
+	/*三角形*/ 
+	font-size: 0;
+	border: 12px solid transparent;
+	border-right: 12px solid #fff;
+	/*绝对定位*/
+	position: absolute;
+	left: -34px;
+	top: 19px;
+}
+.layer .header .go-back .black {
+	/*向上移动*/
+	top: -12px;
+	left: -9px;
+	border-right-color: #000;
+}

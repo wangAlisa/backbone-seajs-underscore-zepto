@@ -1,0 +1,29 @@
+﻿01 requirejs
+02 seajs
+03 路由
+04 列表页视图
+05 图片模型
+06 图片集合
+07 列表页上
+08 列表页下
+09 搜索功能
+10 分类功能
+
+
+1.1项目技术架构：
+使用的框架：Backbone，zepto，zepto.touch, underscore，requirejs，css.js
+1.2目录结果
+Data:异步请求数据
+Img：所有图片文件
+Css：样式文件
+Js：所有脚本文件
+Lib：所有库文件
+Modules: 所有模块
+List：list视图模块
+Layer：layery视图模块
+Model：图片模型
+Collection: 图片集合
+Route: 路由模块
+App.js 项目入口文件
+Index.html 项目文件
+

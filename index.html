@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 兼容移动端，适配视图 -->
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+	<title>去看看</title>
+</head>
+<body>
+	<div id="app">
+		<section class = 'list'>
+			<header class="header">
+				<div class="go-back">
+					<span class="arrow"></span>
+					<span class="arrow green"></span>
+				</div>
+				<div class="login">登录</div>
+				<h1>梦的旅行</h1>
+			</header>
+			<div class="search">
+				<input type="text" placeholder = "搜索你想要的图片">
+				<span>搜一搜</span>
+			</div>
+			<ul class = 'nav clearfix'>
+				<li data-type ='0'>摄&emsp;影</li>
+				<li data-type ='1'>明&emsp;星</li>
+				<li data-type ='2'>壁&emsp;纸</li>
+				<li data-type ='3'>宠&emsp;物</li>
+				<li data-type ='4'>动&emsp;漫</li>
+				<li data-type ='5'>风&emsp;景</li>
+				<li data-type ='6'>头&emsp;像</li>
+				<li data-type ='7'>人&emsp;物</li>
+			</ul>
+			<div class="container">
+			</div>
+
+			<div class="go-top">返回顶部</div>
+		</section>
+		<section class="layer" id = "layer"></section>
+	</div>
+	<!-- 定义大图页模板 -->
+	<script type="text/template" id="tpl_layer">
+		<div class="container" style="<%=style%>">
+			<img src="<%=src%>" alt="">
+		</div>
+		<div class="header">
+			<div class="go-back">
+				<span class="arrow">
+					<span class="arrow black"></span>
+				</span>
+			</div>
+			<h1><%=title%></h1>
+		</div>
+	</script>
+</body>
+<script data-main= 'js/app.js' src = 'js/lib/require.js'></script>
+</html>
